@@ -1,3 +1,4 @@
+import sys
 def checkIfMapping(str1, str2):
     adict = {}
     if len(set(str1)) >= len(set(str2)):
@@ -9,4 +10,4 @@ def checkIfMapping(str1, str2):
                     return False
         return True
     return False
-print(checkIfMapping("bar","foo"))
+print(checkIfMapping(sys.argv[1],sys.argv[2]))
